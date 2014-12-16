@@ -31,6 +31,8 @@ extern NSString * const kMagicalRecordImportAttributeUseDefaultValueWhenNotPrese
 
 @interface NSManagedObject (MagicalRecordDataImport) <MagicalRecordDataImportProtocol>
 
+- (BOOL) MR_importValuesForKeysWithObject:(id)objectData;
+
 + (id) MR_importFromObject:(id)data;
 + (id) MR_importFromObject:(id)data inContext:(NSManagedObjectContext *)context;
 
